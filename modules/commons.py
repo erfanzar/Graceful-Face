@@ -8,9 +8,9 @@ DEVICE = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 class Conv(nn.Module):
     def __init__(self, c1: int, c2: int, k: int = 1, s: int = 1, p: int = None, g: int = 1,
                  activation: [str, torch.nn] = None,
-                 form: int = -1):
+                 ):
         super(Conv, self).__init__()
-        self.form = form
+
         self.to(DEVICE)
         self.conv = nn.Conv2d(c1, c2, kernel_size=k, stride=s,
                               padding=p if p is not None else (1 if k == 3 else 0), groups=g).to(DEVICE)

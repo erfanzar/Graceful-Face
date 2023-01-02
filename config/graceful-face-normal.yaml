@@ -1,12 +1,15 @@
 cfg: [
-  [ -1, 1, 'Conv', [ 32, 64, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 64, 64, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 64, 32, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 32, 64, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 64, 64, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 64, 64, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 64, 64, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 64, 128, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 128, 128, 3, 2, None,1,'nn.ReLU()' ] ],
-  [ -1, 1, 'Conv', [ 128, 128, 3, 2, None,1,'nn.ReLU()' ] ],
+  [ -1, 1, 'Conv', [ 32,  3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 64,  3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 64, 3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 32, 3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 64, 3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 64, 3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 64, 3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 64, 3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 128, 3, 2, None,1,'nn.LeakyReLU()' ] ],
+  [ -1, 1, 'Conv', [ 128, 3, 2, None,1,'nn.LeakyReLU()' ] ],
 ]
+
+s_channel: 3
+c_rec: [ 'Conv' ]
